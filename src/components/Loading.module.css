@@ -1,0 +1,14 @@
+.loading{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background: "#FFFFFF";
+    border-radius: 44px;
+}
+.loading_logo{
+    position: absolute;
+    width: 62px;
+    height: 75px;
+    left: 157px;
+    top: 368px;
+}

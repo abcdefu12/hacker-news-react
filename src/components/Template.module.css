@@ -4,6 +4,7 @@
     height: 812px;
     background: "#FFFFFF";
     border-radius: 44px;
+    left: 10px;
 }
 
 /* LOADING */
@@ -93,24 +94,9 @@
     width: 375px;
     height: 0px;
     left: 0px;
+    right: 0px;
     top: 54px;
     border: 1px solid #FF6600;
-}
-
-/* CONTENT */
-.temp_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-
-    position: absolute;
-    width: 375px;
-    height: 631px;
-    left: 0px;
-    top: 100px;
-    overflow-y: scroll;
-    background: #E8E8ED;
 }
 
 /* HOME INDICATOR */
@@ -119,7 +105,7 @@
     height: 21px;
     left: 0px;
     right: 0px;
-    bottom: 0px;     
+    bottom: 0px;
 }
 
 /* NAV UNDER */
