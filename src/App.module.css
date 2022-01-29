@@ -1,0 +1,162 @@
+.app{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background: "#FFFFFF";
+    border-radius: 44px;
+}
+
+/* LOADING */
+.app_loadingImg{
+    position: absolute;
+    width: 62px;
+    height: 75px;
+    left: 157px;
+    top: 368px;
+}
+
+/* STATUS */
+.app_status{
+    position: absolute;
+    height: 44px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.app_status_left{
+    position: absolute;
+    width: 54px;
+    height: 20px;
+    left: 19px;
+    top: 17px;
+}
+.app_status_right{
+    position: absolute;
+    width: 66.66px;
+    height: 11.34px;
+    left: 297.67px;
+    top: 21.33px;
+}
+/* NOTCH ERROR */
+.app_status_notch{
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    left: calc(50% - 164px/2 + 0.5px);
+    /* left: 106px; */
+    top: -2px;
+    background: #e5e5e5;
+    /* margin-right: 20px; */
+}
+
+/* NAV UPPER */
+.app_nav{
+    position: absolute;
+    width: 375px;
+    height: 54px;
+    left: 0px;
+    top: 44px;
+    background: #FFFFFF;
+}
+.app_nav_logo{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 20px;
+    top: 10px;
+}
+.app_nav_text{
+    position: absolute;
+    width: 124px;
+    height: 34px;
+    left: 58px;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 85.19%; /* or 10px */
+    display: flex;
+    align-items: center;
+    color: #5F5F5F;
+}
+.app_nav_search{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 20px;
+    top: 15px;
+}
+
+/* CONTENT */
+.app_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 375px;
+    height: 631px;
+    left: 0px;
+    top: 100px;
+    overflow-y: scroll;
+    background: #E8E8ED;
+}
+
+/* HOME INDICATOR */
+.app_home{
+    position: absolute;
+    height: 21px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;     
+}
+
+/* NAV UNDER */
+.app_navd{
+    position: absolute;
+    width: 375px;
+    height: 83px;
+    left: 0px;
+    top: 729px;
+    background: #FFFFFF;
+}
+.app_navd_top{
+    position: absolute;
+    left: 5.33%;
+    right: 76.8%;
+    top: 0%;
+    bottom: 38.55%;
+    background: #FFFFFF;
+}
+.app_navd_new{
+    position: absolute;
+    width: 67px;
+    height: 51px;
+    left: 87px;
+    top: 0px;
+    background: #FFFFFF;
+}
+.app_navd_ask{
+    position: absolute;
+    width: 67px;
+    height: 51px;
+    left: 154px;
+    top: 0px;
+}
+.app_navd_show{
+    position: absolute;
+    width: 67px;
+    height: 51px;
+    left: 221px;
+    top: 0px;
+}
+.app_navd_jobs{
+    position: absolute;
+    width: 67px;
+    height: 51px;
+    left: 288px;
+    top: 0px;
+}
