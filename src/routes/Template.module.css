@@ -1,4 +1,4 @@
-.app{
+.temp{
     position: absolute;
     width: 375px;
     height: 812px;
@@ -7,7 +7,7 @@
 }
 
 /* LOADING */
-.app_loadingImg{
+.temp_loadingImg{
     position: absolute;
     width: 62px;
     height: 75px;
@@ -16,21 +16,21 @@
 }
 
 /* STATUS */
-.app_status{
+.temp_status{
     position: absolute;
     height: 44px;
     left: 0px;
     right: 0px;
     top: 0px;
 }
-.app_status_left{
+.temp_status_left{
     position: absolute;
     width: 54px;
     height: 20px;
     left: 19px;
     top: 17px;
 }
-.app_status_right{
+.temp_status_right{
     position: absolute;
     width: 66.66px;
     height: 11.34px;
@@ -38,7 +38,7 @@
     top: 21.33px;
 }
 /* NOTCH ERROR */
-.app_status_notch{
+.temp_status_notch{
     position: absolute;
     width: 31px;
     height: 31px;
@@ -50,7 +50,7 @@
 }
 
 /* NAV UPPER */
-.app_nav{
+.temp_nav{
     position: absolute;
     width: 375px;
     height: 54px;
@@ -58,14 +58,14 @@
     top: 44px;
     background: #FFFFFF;
 }
-.app_nav_logo{
+.temp_nav_logo{
     position: absolute;
     width: 34px;
     height: 34px;
     left: 20px;
     top: 10px;
 }
-.app_nav_text{
+.temp_nav_text{
     position: absolute;
     width: 124px;
     height: 34px;
@@ -81,16 +81,24 @@
     align-items: center;
     color: #5F5F5F;
 }
-.app_nav_search{
+.temp_nav_search{
     position: absolute;
     width: 24px;
     height: 24px;
     right: 20px;
     top: 15px;
 }
+.temp_nav_divider{
+    position: absolute;
+    width: 375px;
+    height: 0px;
+    left: 0px;
+    top: 54px;
+    border: 1px solid #FF6600;
+}
 
 /* CONTENT */
-.app_content{
+.temp_content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +114,7 @@
 }
 
 /* HOME INDICATOR */
-.app_home{
+.temp_home{
     position: absolute;
     height: 21px;
     left: 0px;
@@ -115,7 +123,7 @@
 }
 
 /* NAV UNDER */
-.app_navd{
+.temp_navd{
     position: absolute;
     width: 375px;
     height: 83px;
@@ -123,7 +131,7 @@
     top: 729px;
     background: #FFFFFF;
 }
-.app_navd_top{
+.temp_navd_top{
     position: absolute;
     left: 5.33%;
     right: 76.8%;
@@ -131,7 +139,7 @@
     bottom: 38.55%;
     background: #FFFFFF;
 }
-.app_navd_new{
+.temp_navd_new{
     position: absolute;
     width: 67px;
     height: 51px;
@@ -139,24 +147,32 @@
     top: 0px;
     background: #FFFFFF;
 }
-.app_navd_ask{
+.temp_navd_ask{
     position: absolute;
     width: 67px;
     height: 51px;
     left: 154px;
     top: 0px;
 }
-.app_navd_show{
+.temp_navd_show{
     position: absolute;
     width: 67px;
     height: 51px;
     left: 221px;
     top: 0px;
 }
-.app_navd_jobs{
+.temp_navd_jobs{
     position: absolute;
     width: 67px;
     height: 51px;
     left: 288px;
     top: 0px;
+}
+.temp_navd_divider{
+    position: absolute;
+    width: 375px;
+    height: 0px;
+    left: 0px;
+    top: 1px;
+    border: 1px solid #E8E8ED;
 }
