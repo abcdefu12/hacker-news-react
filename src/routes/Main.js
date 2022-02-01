@@ -3,31 +3,73 @@ import Template from '../components/Template';
 import Loading from "../components/Loading";
 import {useParams} from "react-router-dom";
 import styles from "./Main.module.css";
+import TopFive from "../components/TopFive";
 
 function Main() {
     const [loading, setLoading] = useState(true);
     const [topID, setTopID] = useState([]);
+    const [topMain, setTopMain] = useState([]);
+    
     const getTopID = async() => {
         const json = await(
             await fetch(
                 "https://hacker-news.firebaseio.com/v0/topstories.json"
-          )
-        ).json();
-        setTopID(json);
-        setLoading(false);
+                )
+                ).json();
+                setTopID(json.slice(0,5));
+                setLoading(false);      
+                
     };
-    useEffect(() => { getTopID();  }, []);
+    
+    // const getTopMain = async() => {
+    //     for( let i=0; i<5; i+=1){  
+    //         let id = topID[i]            
+    //         const json = await(
+    //             await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`)        
+    //         ).json();
+    //         setTopMain(json);
+    //     };    
+    // };
+
+    useEffect(() => { 
+        getTopID();
+        // getTopMain();    
+        
+    }, []);
+    // useEffect(()=>{ getTopMain(); },[id])
+
     console.log(topID);
+    console.log(topMain);
+    console.log("---------------------------------");
+
     return(
         <div className={styles.main}>
             {loading ? <Loading /> :          
             <div>
                 <Template />
-                <div >
-                    <div className={styles.main_content}></div>
-                    {/* 작성한다 메인 다섯개씩 불러오도록 */}
+              
+                
+                    <div className={styles.main_content}>
+                        <TopFive />
 
-                </div>
+                        {/* <div className={styles.banner_top}></div>
+                        <div className={styles.banner_new}></div>
+                        <div className={styles.banner_ask}></div>
+                        <div className={styles.banner_show}></div>
+                        <div className={styles.banner_jobs}></div> */}
+                        {/* {topID(top => (
+                            <TopFive />
+                        ))}
+                         */}
+
+                    </div>
+                    
+                    
+
+
+                        
+
+                
             </div>
             
             }
