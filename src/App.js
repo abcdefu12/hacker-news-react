@@ -5,7 +5,7 @@ import logo from './logo.svg';
 
 
 import{BrowserRouter as Router, Switch, Route,Link} from "react-router-dom";
-// import Template from './components/Template';
+
 import Main from "./routes/Main";
 import Top from "./routes/Top";
 import New from "./routes/New";

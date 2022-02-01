@@ -46,7 +46,7 @@ function Template() {
             <div className={styles.temp_status}>
                 <img src={leftside} className={styles.temp_status_left} />
                 <img src={rightside} className={styles.temp_status_right} />
-                <a className={styles.temp_status_notch}></a>
+                <div className={styles.temp_notch}></div>
             </div>
 
 

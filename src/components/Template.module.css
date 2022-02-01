@@ -38,7 +38,17 @@
     left: 297.67px;
     top: 21.33px;
 }
+
 /* NOTCH ERROR */
+.temp_notch{
+    position: absolute;
+    width: 164px;
+    height: 31px;
+    left: 106px;
+    top: -2px;
+    background: #e5e5e5;
+    /* margin: 20px; */
+}
 .temp_status_notch{
     position: absolute;
     width: 31px;
