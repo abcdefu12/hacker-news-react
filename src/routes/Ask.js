@@ -12,7 +12,7 @@ function Top(){
     const getTop = async() => {
         const json = await(
             await fetch(
-                "https://hacker-news.firebaseio.com/v0/topstories.json"
+                "https://hacker-news.firebaseio.com/v0/askstories.json"
                 )
                 ).json();
                 setTop(json.slice(0,5));
