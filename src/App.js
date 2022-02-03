@@ -20,12 +20,12 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/"> <Main /> </Route>
           <Route path="/Top"> <Top /> </Route>
           <Route path="/New"> <New /> </Route>
           <Route path="/Ask"> <Ask /> </Route>
           <Route path="/Show"> <Show /> </Route>
-          <Route path="/Jobs"> <Jobs /> </Route> 
+          <Route path="/Jobs"> <Jobs /> </Route>
+          <Route path="/"> <Main /> </Route> 
         </Switch>
       </Router>
     </div>
