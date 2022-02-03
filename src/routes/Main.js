@@ -47,35 +47,12 @@ function Main() {
             {loading ? <Loading /> :          
             <div>
                 <Template />
-              
-                
-                    <div className={styles.main_content}>
-                        <TopFive />
-
-                        {/* <div className={styles.banner_top}></div>
-                        <div className={styles.banner_new}></div>
-                        <div className={styles.banner_ask}></div>
-                        <div className={styles.banner_show}></div>
-                        <div className={styles.banner_jobs}></div> */}
-                        {/* {topID(top => (
-                            <TopFive />
-                        ))}
-                         */}
-
-                    </div>
-                    
-                    
-
-
-                        
-
-                
-            </div>
-            
+                <div className={styles.main_content}>
+                    <TopFive />
+                </div> 
+            </div>    
             }
-
-        </div>
-        
+        </div>       
     );
 }
 export default Main;
