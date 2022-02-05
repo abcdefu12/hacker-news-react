@@ -2,6 +2,7 @@ import styles from "./Template.module.css";
 import {Link} from "react-router-dom";
 // import { Group_obj, Group_key_arr } from "./atom";
 import {useState} from "react";
+import Clock from "react-live-clock";
 
 
 // UI ICON can be changed (design part)
@@ -24,6 +25,9 @@ import navJobs2 from "../images/icon_job2.png";
 
 function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed}) {
     
+    const date = new Date();
+
+    // search working on error -> make new route or not
     const [search, setSearch] = useState(null);
     const searchClick = (event) => { setSearch(event.target.value) };
 
@@ -49,11 +53,15 @@ function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed})
 
             {/* STATUS */}
             <div className={styles.temp_status}>
-                <img src={leftside} className={styles.temp_status_left} />
+                {/* <img src={leftside} className={styles.temp_status_left} /> */}
+                {/* <div className={styles.temp_status_left}>{date.getHours()}:{date.getMinutes()}</div> */}
+                <div className={styles.temp_status_left}>
+                    <Clock format={`HH:mm`} ticking={true} />
+                </div>
+                
                 <img src={rightside} className={styles.temp_status_right} />
                 <div className={styles.temp_notch}></div>
             </div>
-
 
             {/* UPPER NAV */}
             <div className={styles.temp_nav}>

@@ -30,6 +30,20 @@
     height: 20px;
     left: 19px;
     top: 17px;
+
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    /* Label Color/Light/Primary */
+
+    color: #000000;
 }
 .temp_status_right{
     position: absolute;

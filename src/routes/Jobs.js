@@ -24,6 +24,9 @@ function Top(){
         getTop();
     }, []);
 
+    // 로그 삭제
+    console.log(top);
+
 
     return(
         <div className={styles.top}>

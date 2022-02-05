@@ -8,6 +8,8 @@ import styles from "./TopFive.module.css";
 function TopFive({props}){
     const [topMain, setTopMain] = useState([]);
 
+
+    // 두번째 fetch null error
     const getTopMain = async() => {
         for( let i=0; i<5; i+=1){  
             let id = {props}[i]            
