@@ -27,7 +27,7 @@ function TopFive({props}){
     return(
         <div className={styles.main_content}>
             
-            {/* TOP */}       
+            {/* TOP */}      
             <div className={styles.banner_top}>
                 <div className={styles.banner_title}>TOP 5</div>
                 <div className={styles.banner_detail}>Find out most hot issues</div>
@@ -46,6 +46,10 @@ function TopFive({props}){
                     <div className={styles.banner_more_new}>More</div>
                 </div></Link>
             </div>
+
+            <div className={styles.frame}></div>
+            <div className={styles.frame}></div>
+            <div className={styles.frame}></div>
 
             
 
@@ -82,8 +86,7 @@ function TopFive({props}){
             <div className={styles.frame}></div>
             <div className={styles.frame}></div>
             <div className={styles.frame}></div>
-            <div className={styles.frame}></div>
-            <div className={styles.frame}></div>
+           
 
 
             {/* {topID(top => (
