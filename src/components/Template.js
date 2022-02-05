@@ -113,31 +113,3 @@ function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed})
 };
 
 export default Template;
-
-
-
-
-// function TopMain(){
-        //     const {topID} = useParams();
-        //     const getTopMain = async() => {
-        //         const json = await(
-        //             await fetch(`https://hacker-news.firebaseio.com/v0/item/${topID}.json`)
-        //         ).json();
-        //     // useEffect(()=>{ getTopMain()},[]);
-        // };
- 
-    
-    
-        // const TopFive = topID..slice(0,5);
-        // const TopMain = useParams();
-       
-    // }
-    // 
-    // console.log(TopMain);
-
-    // useEffect(() => {
-    //     getTopID();
-    //     // getTopMain();
-    // }, []);
-    // console.log(topID);
-    // console.log(topMain);

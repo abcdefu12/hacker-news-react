@@ -35,9 +35,26 @@ function Top(){
                     <Template TopPressed = {topPressed} />
                     <div className={styles.top_content}>
                         {/* top페이지 내용 작성 */}
-                        <h1>Top</h1>
 
+                        {/* TOP BANNER */}
+                        <div className={styles.top_banner}>
+                            <div className={styles.top_banner_text}>TOP</div>
+                        </div>
 
+                        {/* TOP BOX */}
+                        <div className={styles.top_box}>
+                            <div className={styles.top_box_page}>
+                                <div className={styles.top_box_page_text}>.com</div>
+                            </div>
+                            <div className={styles.top_box_title}>title of top news</div>
+                        </div>
+
+                        <div className={styles.top_box}></div>
+                        <div className={styles.top_box}></div>
+                        <div className={styles.top_box}></div>
+                        <div className={styles.top_box}></div>
+                        <div className={styles.top_box}></div>
+                        <div className={styles.top_box}></div>
 
 
 
