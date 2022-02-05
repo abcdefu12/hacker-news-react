@@ -8,6 +8,7 @@ import {useState, useEffect} from "react";
 function Top(){
     const [loading, setLoading] = useState(true);
     const [top, setTop] = useState([]);
+    const [askPressed, setAskPressed] = useState(false);
 
     const getTop = async() => {
         const json = await(
@@ -16,7 +17,8 @@ function Top(){
                 )
                 ).json();
                 setTop(json.slice(0,5));
-                setLoading(false);                   
+                setLoading(false);
+                setAskPressed(true);                 
     };
     useEffect(() => { 
         getTop();
@@ -27,8 +29,11 @@ function Top(){
         <div className={styles.top}>
             {loading ? <Loading /> :
                 <div>
-                    <Template />
+                    <Template AskPressed={askPressed}/>
                     <div className={styles.top_content}>
+                        {/* ASK CONTENT HERE!!!! */}
+
+                        
                         <h1>Ask</h1>
                     </div>
                 </div>
