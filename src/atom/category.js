@@ -3,11 +3,35 @@
 
 // ]
 const categoryList = [ "top", "new", "ask", "show", "job", ];
+const categoryInfo = [
+    {
+        "category": "TOP 5",
+        "subCategory": "Find out most hot issues",
+        "color": "#fd6106"
+    },
+    {
+        "category": "NEW 5",
+        "subCategory": "Fast, Fresh, Fashionable",
+        "color": "#7B61FF"
+    },
+    {
+        "category": "ASK",
+        "subCategory": "Ask and get fresh information",
+        "color": "#DB00FF"
+    },
+    {
+        "category": "SHOW",
+        "subCategory": "Share and grow together",
+        "color": "#69A075"
+    },
+    {
+        "category": "JOBS",
+        "subCategory": "Your new possibility",
+        "color": "#FEBB10"
+    }
+]
 
-const colorList = { "top":"#FD6106", "new":"", "ask":"", "show":"", "job":"" };
-const colorListKey = Object.keys(colorList);
-
-export { categoryList, colorList, colorListKey };
+export { categoryList, categoryInfo };
 
  // fetch할때 array로 불러와서 파일양 줄일 예정
     

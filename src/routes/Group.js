@@ -4,7 +4,7 @@ import styles from "./Top.module.css";
 
 import { useState, useEffect, } from "react";
 import { useParams, Link } from "react-router-dom";
-import { category, categoryList } from "../atom/category";
+// import { category, categoryList } from "../atom/category";
 import GroupNews from "../render/GroupNews";
 
 
@@ -65,7 +65,15 @@ function Top(){
                             by ={detailID.by}
                             id={detailID.id}
                             title={detailID.title}
-                            url={detailID.url} />
+                            url={detailID.url} 
+                            // kids
+                            // text
+                            
+                            // time
+                            // by
+                            // type
+                            
+                            />
 
                         ))}
                        
