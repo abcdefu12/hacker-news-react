@@ -22,7 +22,13 @@
     top: 102px;
     overflow-y: scroll;
     background: #F2F2F2;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     /* background: #E8E8ED; */
+}
+.main_content::-webkit-scrollbar{
+    display: none;
 }
 
 

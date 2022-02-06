@@ -23,6 +23,12 @@
     overflow-y: scroll;
     background: #F2F2F2;
     /* background: #E8E8ED; */
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.top_content::-webkit-scrollbar{
+    display: none;
 }
 .top_banner{
     position: static;

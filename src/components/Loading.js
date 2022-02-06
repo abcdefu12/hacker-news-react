@@ -3,7 +3,10 @@ import styles from "./Loading.module.css";
 
 function Loading() {
     return(
-        <img src={loadingImg} className={styles.loading_logo}/>
+        <div className={styles.loading}>
+            <img src={loadingImg} className={styles.loading_logo}/>
+
+        </div>
     );
 }
 export default Loading;

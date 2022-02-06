@@ -12,6 +12,7 @@ function Top(){
     const [loading, setLoading] = useState(true);
     const [top, setTop] = useState([]);
     const [topPressed, setTopPressed] = useState(false);
+    const [jobPressed, setJobPressed] = useState(false);
     const [detailIDs, setDetailIDs] = useState([]);
 
     const {category} = useParams();
@@ -27,6 +28,7 @@ function Top(){
         return result2;
     };
     
+    
     const getDetailIDs = async (idArr) => {
         return await Promise.all(
             idArr.map(async (id) => {
@@ -36,25 +38,28 @@ function Top(){
         )
     }
 
+   
+
     useEffect(() => { getTotalIDs(); setLoading(true); return; }, [category]);
 
     // 로그 삭제
     console.log("------------");
+    console.log(category);
     console.log(detailIDs);
 
     return(    
         <div className={styles.top}>
             {loading ? <Loading /> : 
                 <div>
-                    <Template />
+                    <Template Category={category} />
                     <div className={styles.top_content}>
 
-                        {/* TOP BANNER */}
+                        {/* BANNER */}
                         <div className={styles.top_banner}>
                             <div className={styles.top_banner_text}> {category.toUpperCase()} </div>
                         </div>
 
-                        {/* TOP BOX */}
+                        {/* BOX */}
                         {detailIDs.map((detailID)=>(
                             <GroupNews 
                             by ={detailID.by}

@@ -23,8 +23,8 @@ import navjob2 from "../images/icon_job2.png";
 
 
 
-function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, SearchPressed}) {
-    
+function Template(Category, SearchPressed) {
+    // {TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, SearchPressed}
     // const date = new Date();
 
 
@@ -90,27 +90,32 @@ function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, 
             {/* UNDER NAV */}
             <div className={styles.temp_navd}>                   
                 <Link to ={`/top`} > 
-                    {TopPressed ? 
+                    {/* {TopPressed ? 
                         <img src={navTop2} className={styles.temp_navd_top} /> :
                         <img src={navTop} className={styles.temp_navd_top} /> 
-                    } </Link>
+                    }  */}
+                    {Category="top" ? 
+                        <img src={navTop2} className={styles.temp_navd_top} /> :
+                        <img src={navTop} className={styles.temp_navd_top} /> 
+                    } 
+                </Link>
                 <Link to ={`/new`}> 
-                    {NewPressed ?
+                    {Category="new" ?
                         <img src={navNew2} className={styles.temp_navd_new} /> :
                         <img src={navNew} className={styles.temp_navd_new} /> 
                     } </Link>
                 <Link to ={`/ask`}>
-                    {AskPressed ? 
+                    {Category="ask" ? 
                         <img src={navAsk2} className={styles.temp_navd_ask} /> :
                         <img src={navAsk} className={styles.temp_navd_ask} />
                     } </Link>
                 <Link to ={`/show`}>
-                    {ShowPressed ? 
+                    {Category="show" ? 
                         <img src={navShow2} className={styles.temp_navd_show} /> :
                         <img src={navShow} className={styles.temp_navd_show} />
                     } </Link>
                 <Link to ={`/job`}>
-                    {JobPressed ? 
+                    {Category="job" ? 
                         <img src={navjob2} className={styles.temp_navd_job} /> :
                         <img src={navjob} className={styles.temp_navd_job} />
                     } </Link>    
