@@ -23,7 +23,7 @@ function TopFive({props}){
     useEffect(() => {        
         getTopMain();            
     }, []);
-    console.log(topMain);
+    // console.log(topMain);
 
 
     return(

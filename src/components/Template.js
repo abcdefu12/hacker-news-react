@@ -23,13 +23,9 @@ import navJobs2 from "../images/icon_job2.png";
 
 
 
-function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed}) {
+function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, SearchPressed}) {
     
-    const date = new Date();
-
-    // search working on error -> make new route or not
-    const [search, setSearch] = useState(null);
-    const searchClick = (event) => { setSearch(event.target.value) };
+    // const date = new Date();
 
 
     // fetch할때 array로 불러와서 파일양 줄일 예정
@@ -71,7 +67,14 @@ function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed})
                         <div className={styles.temp_nav_text}>svelte<br/>hacker<br/>news</div>
                     </Link>
                 </div>
-                <img src={navSearch} className={styles.temp_nav_search} />
+                <div>
+                    <Link to={`/search`}>
+                        {SearchPressed ? <img src={navSearch} className={styles.temp_nav_search} /> :
+                        <img src={navSearch} className={styles.temp_nav_search} />
+                            
+                    }</Link>
+                </div>
+                
                 <div className={styles.temp_nav_divider}></div>
             </div>
 

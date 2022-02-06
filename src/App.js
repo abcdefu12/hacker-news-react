@@ -12,6 +12,7 @@ import New from "./routes/New";
 import Ask from "./routes/Ask";
 import Show from "./routes/Show";
 import Jobs from "./routes/Jobs";
+import Search from './routes/Search';
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <div>
       <Router>
         <Switch>
+          <Route path="/Search"> <Search /> </Route>
           <Route path="/Top"> <Top /> </Route>
           <Route path="/New"> <New /> </Route>
           <Route path="/Ask"> <Ask /> </Route>
