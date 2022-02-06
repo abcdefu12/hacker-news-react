@@ -18,8 +18,8 @@ import navAsk from "../images/icon_ask.png";
 import navAsk2 from "../images/icon_ask2.png";
 import navShow from "../images/icon_show.png";
 import navShow2 from "../images/icon_show2.png";
-import navJobs from "../images/icon_job.png";
-import navJobs2 from "../images/icon_job2.png";
+import navjob from "../images/icon_job.png";
+import navjob2 from "../images/icon_job2.png";
 
 
 
@@ -29,7 +29,7 @@ function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, 
 
 
     // fetch할때 array로 불러와서 파일양 줄일 예정
-    // const Group_obj = {"Top":"top", "New": "new", "Ask":"ask", "Show":"show", "Jobs":"jobs"};
+    // const Group_obj = {"Top":"top", "New": "new", "Ask":"ask", "Show":"show", "job":"job"};
     // const Group_key_arr = Object.keys(Group_obj);
     // <div>
     // { Group_key_arr.map((key)=>{
@@ -109,10 +109,10 @@ function Template({TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, 
                         <img src={navShow2} className={styles.temp_navd_show} /> :
                         <img src={navShow} className={styles.temp_navd_show} />
                     } </Link>
-                <Link to ={`/jobs`}>
+                <Link to ={`/job`}>
                     {JobPressed ? 
-                        <img src={navJobs2} className={styles.temp_navd_jobs} /> :
-                        <img src={navJobs} className={styles.temp_navd_jobs} />
+                        <img src={navjob2} className={styles.temp_navd_job} /> :
+                        <img src={navjob} className={styles.temp_navd_job} />
                     } </Link>    
                 <div className={styles.temp_navd_divider}></div>
             </div>

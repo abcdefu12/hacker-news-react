@@ -75,12 +75,12 @@ function TopFive({props}){
             </div>
            
 
-            {/* JOBS */}
-            <div className={styles.banner_jobs}>
+            {/* job */}
+            <div className={styles.banner_job}>
                 <div className={styles.banner_title}>JOBS</div>
                 <div className={styles.banner_detail}>Your new possibility</div>
-                <Link to={`/jobs`}><div className={styles.banner_more}>
-                    <div className={styles.banner_more_jobs}>More</div>
+                <Link to={`/job`}><div className={styles.banner_more}>
+                    <div className={styles.banner_more_job}>More</div>
                 </div></Link>
             </div>
 

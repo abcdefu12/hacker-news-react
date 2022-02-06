@@ -58,7 +58,7 @@
     /* margin: 30px 0px; */
     margin: 30px 0px 10px 0px;
 }
-.banner_jobs{
+.banner_job{
     top: 4755.18px;
     background: #FEBB10;
     position: static;
@@ -225,7 +225,7 @@
 
     color: #69A075;
 }
-.banner_more_jobs{
+.banner_more_job{
     position: absolute;
     width: 30px;
     height: 12px;

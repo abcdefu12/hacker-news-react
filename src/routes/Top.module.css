@@ -88,7 +88,7 @@
     padding: 6px 10px;
 
     position: static;
-    width: 130px;
+    max-width: 130px;
     height: 20px;
     left: 20px;
     top: 20px;
@@ -106,7 +106,7 @@
 }
 .top_box_page_text{
     position: static;
-    width: 110px;
+    max-width: 110px;
     height: 11px;
     left: 10px;
     top: 4.5px;

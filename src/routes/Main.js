@@ -5,13 +5,33 @@ import {useParams} from "react-router-dom";
 import styles from "./Main.module.css";
 import TopFive from "../components/TopFive";
 
+import { categoryList } from "../atom/category";
+
 function Main() {
     const [loading, setLoading] = useState(true);
     const [topMain, setTopMain] = useState([]);
     
-    const getTopID = async() => {
+    // const getTopID = async() => {
+    //     const result = await(
+    //         await fetch(`https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=5&orderBy="$key"`)).json();
+
+    //     const result2 = await getTopMain(result);
+    //     setTopMain(result2);
+    //     setLoading(false);
+    //     return result2;
+    // };
+    
+    // const getTopMain = async (idArr) => {
+    //     return await Promise.all(
+    //         idArr.map((id) => {
+    //             return fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(response => response.json());
+    //         })
+    //     )
+    // }
+
+    const getTotalID = async() => {
         const result = await(
-            await fetch(`https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=5&orderBy="$key"`)).json();
+            await fetch(`https://hacker-news.firebaseio.com/v0/${categoryList[0]}stories.json?limitToFirst=5&orderBy="$key"`)).json();
 
         const result2 = await getTopMain(result);
         setTopMain(result2);
@@ -21,11 +41,13 @@ function Main() {
     
     const getTopMain = async (idArr) => {
         return await Promise.all(
-            idArr.map((id) => {
-                return fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`).then(response => response.json());
+            idArr.map(async (id) => {
+                const response = await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
+                return await response.json();
             })
         )
     }
+
     // const getTopMain = async() => {
     //     for( let i=0; i<5; i++){  
     //         const json = await(
@@ -36,9 +58,8 @@ function Main() {
     // };
 
 
-    useEffect(() => { 
-        getTopID();
-    }, []);
+    useEffect(() => { getTotalID(); }, []);
+
     // useEffect(()=>{ getTopMain(); },[id])
 
     // console.log(topID);
