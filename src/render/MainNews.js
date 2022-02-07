@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import styles from "./MainNews.module.css";
 import MainCard from "./MainCard";
 import {categoryList} from "../atom/category";
+import {Banner, Banner_More_Text} from "../style/CardStyle"
 
 function MainNews({category, subCategory, color, index}){
     const [loading, setLoading] = useState(true);
@@ -36,19 +37,19 @@ function MainNews({category, subCategory, color, index}){
 
     return(
         <div className={styles.main_content}>
-            <div className={styles.banner}>
-                <div className={styles.banner_title}>{category}</div>
-                <div className={styles.banner_detail}>{subCategory}</div>
+            <Banner color={color}>
+                <div className={styles.banner_title}> {category} </div>
+                <div className={styles.banner_detail}> {subCategory} </div>
                 <Link to={categoryList[index]}>
                     <div className={styles.banner_more}>
-                        <div className={styles.banner_more_top}>More</div>
+                        <Banner_More_Text color={color}>More</Banner_More_Text>
                     </div>
                 </Link>
-            </div>
+            </Banner>
             {
                 loading ? "Loading" : 
                 mainIDs.map((data) => (
-                    <MainCard {...data} key={data.id} /> 
+                    <MainCard {...data} key={data.id} color={color}/> 
                 ))
             }
         </div>

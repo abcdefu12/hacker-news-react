@@ -11,12 +11,11 @@ function Main() {
             <div>
                 <Template />
                 <div className={styles.main_content}>
-                    {/* <TopFive /> */}
                     {categoryInfo.map((info, index) => (
                         <MainNews {...info} index={index} key={info.category}/>
                     ))}
                 </div> 
-            </div>    
+            </div>   
         </div>       
     );
 }
