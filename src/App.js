@@ -8,11 +8,7 @@ import{BrowserRouter as Router, Switch, Route,Link} from "react-router-dom";
 
 import Main from "./routes/Main";
 import Group from "./routes/Group";
-import Top from "./routes/Top";
-import New from "./routes/New";
-import Ask from "./routes/Ask";
-import Show from "./routes/Show";
-import Job from "./routes/Job";
+
 import Search from './routes/Search';
 
 import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue, } from "recoil";

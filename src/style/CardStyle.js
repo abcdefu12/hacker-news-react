@@ -18,10 +18,7 @@ export const Heart = styled.div`
     /* identical to box height, or 100% */
 
     letter-spacing: -0.5px;
-
-    color: ${props => props.color};
-    
-    
+    color: ${props => props.color};  
 `;
 export const Frame_Title = styled.div`
 
@@ -31,7 +28,7 @@ export const Frame_Title = styled.div`
 // MAIN NEWS
 export const Banner = styled.div`
     top: 80px;
-    // background: #FD6106;
+    /* background: #FD6106; */
     background: ${props => props.color};
     position: static;
     width: 335px;

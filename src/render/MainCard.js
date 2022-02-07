@@ -6,9 +6,9 @@ function MainCard({by, descendants, id, kids, score, text, time, title, color}){
     return(
         <div key="mainCard">            
             <div className={styles.frame}>
-                <div className={styles.title}>{title}</div>
-                <div className={styles.text}>{text}</div>
-                
+                <div className={styles.title}>{title}</div> 
+                <br />
+                <div className={styles.text}>{text ? `${text.slice(0,245)}...` : null }</div>
                 <br />
                 <Heart color={color} > {score} <br/> {descendants} </Heart>
                 
