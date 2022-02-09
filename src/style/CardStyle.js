@@ -13,7 +13,8 @@ export const Heart = styled.div`
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-size: 12px;
     line-height: 10px;
     /* identical to box height, or 100% */
 
