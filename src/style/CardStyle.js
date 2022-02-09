@@ -65,3 +65,23 @@ export const Banner_More_Text = styled.div`
     color: ${props => props.color};
 
 `;
+
+// 현재시간과 작성시간 시간 차이 return 함수
+export const DiffCurrentTime = (unixTime) => {
+    // 데이터가 Unix 시간으로 들어옴
+    const now = new Date();
+    const writeDate = new Date(unixTime * 1000);
+    const diffTime = now.getTime() - writeDate.getTime();
+    const diffDay = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const diffHour = Math.floor(diffTime / (1000 * 60 * 60));
+    const diffMinute = Math.floor(diffTime / (1000 * 60));
+  
+    let resultDiff = `${diffMinute} m ago`;
+    if (diffMinute >= 60) {
+      resultDiff = `${diffHour} h ago`;
+      if (diffHour >= 24) {
+        resultDiff = `${diffDay} d ago`;
+      }
+    }
+    return resultDiff;
+  };

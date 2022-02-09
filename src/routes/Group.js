@@ -61,11 +61,17 @@ function Top(){
 
                         {/* BOX */}
                         {detailIDs.map((detailID)=>(
-                            <GroupNews 
+                            <GroupNews
                             by ={detailID.by}
                             id={detailID.id}
                             title={detailID.title}
                             url={detailID.url} 
+                            text={detailID.text}
+                            date={detailID.time}
+                            point={detailID.score}
+                            many={detailID.descendants}
+                            
+
                             // kids
                             // text
                             

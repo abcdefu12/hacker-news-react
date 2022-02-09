@@ -72,9 +72,11 @@
     justify-content: flex-end;
     align-items: flex-start;
     padding: 20px;
+    width: 330px;
 
     position: static;
-    height: 124px;
+    /* height: 124px; */
+    height: auto;
     left: 0px;
     right: 0px;
     bottom: 450px;
@@ -112,7 +114,8 @@
 }
 .top_box_page_text{
     position: static;
-    max-width: 110px;
+    /* max-width: 110px; */
+    width: auto;
     height: 11px;
     left: 10px;
     top: 4.5px;
@@ -136,11 +139,6 @@
     margin: 0px 10px;
 }
 .top_box_title{
-    width: 335px;
-    height: 18px;
-    left: 20px;
-    top: 50px;
-
     font-family: Pretendard;
     font-style: normal;
     font-weight: 800;
@@ -153,12 +151,22 @@
 
     color: #000000;
 
-
-    /* Inside auto layout */
-
-    flex: none;
     order: 1;
     align-self: stretch;
+    flex-grow: 0;
+    /* margin: 10px 0px; */
+}
+.top_box_subdetail{
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: normal;
+    /* font-size: 10px; */
+    font-size: 1px;
+    /* line-height: 110%; */
+    line-height: 150%;
+    /* or 11px */
+    color: #6B6B6B;
+    order: 2;
     flex-grow: 0;
     margin: 10px 0px;
 }
