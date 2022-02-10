@@ -53,10 +53,6 @@ function Detail(){
                         <DetailNews {...details} />
 
                         {/* COMMENT DETAIL */}
-                        {/* {details.kids.map((kid, index)=> (
-                            <DetailComments {...kid} index={index}/>
-                        ))} */}
-                        {/* <DetailComments kids={details.kids} /> */}
                         <DetailComments {...details} />
                         
 

@@ -10,7 +10,7 @@ function DetailNews({title, by, descendants, time, text}){
             
             <div className={styles.news_title}>{title}</div>
             <div className={styles.news_text}>
-                <DiffCurrentTime UnixTime={time} />
+                <DiffCurrentTime unixTime={time} />
                 &nbsp; <b>by {by}</b> 
             </div>
             

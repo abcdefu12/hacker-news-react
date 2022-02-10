@@ -4,7 +4,6 @@ import styles from "../routes/Top.module.css";
 import { DiffCurrentTime } from "../style/CardStyle";
 
 function GroupNews({ by, id, title, url, text, date, point, many, kid, category}){
-
     
     return(
         <div key="groupnews">           

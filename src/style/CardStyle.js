@@ -67,7 +67,7 @@ export const Banner_More_Text = styled.div`
 `;
 
 // 현재시간과 작성시간 시간 차이 return 함수
-export const DiffCurrentTime = (unixTime) => {
+export const DiffCurrentTime = ({unixTime}) => {
     // 데이터가 Unix 시간으로 들어옴
     const now = new Date();
     const writeDate = new Date(unixTime * 1000);
