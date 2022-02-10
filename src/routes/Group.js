@@ -42,10 +42,6 @@ function Top(){
 
     useEffect(() => { getTotalIDs(); setLoading(true); return; }, [category]);
 
-    // 로그 삭제
-    console.log("------------");
-    console.log(category);
-    console.log(detailIDs);
 
     return(    
         <div className={styles.top}>

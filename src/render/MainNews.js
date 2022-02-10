@@ -30,10 +30,6 @@ function MainNews({category, subCategory, color, index}){
         setLoading(false);
     }, [])
    
-    //로그제거
-    console.log(loading);
-    console.log(mainIDs);
-    console.log("========");
 
     return(
         <div className={styles.main_content}>

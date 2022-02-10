@@ -16,31 +16,18 @@ function Detail(){
     const getDetails = async() => {
         const result = await(
             await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`)).json();
-
-        // const result2 = await getDetailIDs(result);
         setDetails(result);
         setLoading(false);
-        // return result2;
     };
     useEffect(() => { getDetails() },[id]);
-    
-    console.log("======");
-    console.log(details);
-    // console.log(category);
-    console.log(id);
-    console.log(details.kids)
 
     const path = window.location.pathname;
-    // console.log(path);
-    // console.log(path.slice(0,-9).slice(19));
-
-
 
     return(
         <div className={styles.top}>
             {loading ? <Loading key="loading"/> :
                 <div>
-                    <Template />
+                    <Template category={path.slice(0,-9).slice(19)} />
                     <div className={styles.top_content}>
                         {/* BANNER */}
                         <div className={styles.top_banner}>

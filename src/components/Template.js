@@ -23,26 +23,7 @@ import navjob2 from "../images/icon_job2.png";
 
 
 
-function Template(Category, SearchPressed) {
-    // {TopPressed, NewPressed, ShowPressed, AskPressed, JobPressed, SearchPressed}
-    // const date = new Date();
-
-
-    // fetch할때 array로 불러와서 파일양 줄일 예정
-    // const Group_obj = {"Top":"top", "New": "new", "Ask":"ask", "Show":"show", "job":"job"};
-    // const Group_key_arr = Object.keys(Group_obj);
-    // <div>
-    // { Group_key_arr.map((key)=>{
-    //     return(
-    //         <div key={key}>
-    //             <Link to={`/page/${Group_obj[key]}`}></Link>
-    //         </div>
-    //     )
-    // })}
-    // </div>
-
-
-
+function Template({category, SearchPressed}) {
 
     return(           
         <div >{/* className={styles.temp} */}
@@ -90,32 +71,28 @@ function Template(Category, SearchPressed) {
             {/* UNDER NAV */}
             <div className={styles.temp_navd}>                   
                 <Link to ={`/top`} > 
-                    {/* {TopPressed ? 
-                        <img src={navTop2} className={styles.temp_navd_top} /> :
-                        <img src={navTop} className={styles.temp_navd_top} /> 
-                    }  */}
-                    {Category="top" ? 
+                    {category=="top" ? 
                         <img src={navTop2} className={styles.temp_navd_top} /> :
                         <img src={navTop} className={styles.temp_navd_top} /> 
                     } 
                 </Link>
                 <Link to ={`/new`}> 
-                    {Category="new" ?
+                    {category=="new" ?
                         <img src={navNew2} className={styles.temp_navd_new} /> :
                         <img src={navNew} className={styles.temp_navd_new} /> 
                     } </Link>
                 <Link to ={`/ask`}>
-                    {Category="ask" ? 
+                    {category=="ask" ? 
                         <img src={navAsk2} className={styles.temp_navd_ask} /> :
                         <img src={navAsk} className={styles.temp_navd_ask} />
                     } </Link>
                 <Link to ={`/show`}>
-                    {Category="show" ? 
+                    {category=="show" ? 
                         <img src={navShow2} className={styles.temp_navd_show} /> :
                         <img src={navShow} className={styles.temp_navd_show} />
                     } </Link>
                 <Link to ={`/job`}>
-                    {Category="job" ? 
+                    {category=="job" ? 
                         <img src={navjob2} className={styles.temp_navd_job} /> :
                         <img src={navjob} className={styles.temp_navd_job} />
                     } </Link>    
