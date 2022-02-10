@@ -31,7 +31,8 @@ function Detail(){
     console.log(details.kids)
 
     const path = window.location.pathname;
-    // console.log(path.slice(0,-9).slice(1));
+    // console.log(path);
+    // console.log(path.slice(0,-9).slice(19));
 
 
 
@@ -44,7 +45,7 @@ function Detail(){
                         {/* BANNER */}
                         <div className={styles.top_banner}>
                             <div className={styles.top_banner_text}>
-                                {path.slice(0,-9).slice(1).toUpperCase()}     
+                                {path.slice(0,-9).slice(19).toUpperCase()}     
                             </div>
                         </div>
 

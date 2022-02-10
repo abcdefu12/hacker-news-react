@@ -56,7 +56,7 @@ function Template(Category, SearchPressed) {
                 </div>
                 
                 <img src={rightside} className={styles.temp_status_right} />
-                <div className={styles.temp_notch}></div>
+                {/* <div className={styles.temp_notch}></div> */}
             </div>
 
             {/* UPPER NAV */}

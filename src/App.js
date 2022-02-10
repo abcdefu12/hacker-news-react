@@ -18,7 +18,7 @@ import { RecoilRoot, atom, selector, useRecoilState, useRecoilValue, } from "rec
 function App() {
   return (
     <RecoilRoot>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route path={"/"}> <Main /> </Route>
         <Route path={`/:category`}> <Group /> </Route>
         <Route path={`/:category/:id`}> <Detail /> </Route>
