@@ -73,6 +73,7 @@
 .news_content_text{
 
     width: 335px;
+    /* max-width: 300px; */
     /* height: 220px; */
     height: auto;
     /* left: 20px; */
@@ -143,6 +144,8 @@
     height: 180px;
     left: 20px;
     top: 70px; */
+    max-width: 335px;
+
 
     font-family: Pretendard;
     font-style: normal;
@@ -159,10 +162,10 @@
 
     /* Inside auto layout */
 
-    flex: none;
+    /* flex: none; */
     order: 2;
-    flex-grow: 0;
-    /* margin: 10px 0px; */
+    /* flex-grow: 0;
+    margin: 10px 0px; */
 }
 .com_time{
     /* position: static;

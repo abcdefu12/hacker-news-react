@@ -49,7 +49,9 @@ function MainNews({category, subCategory, color, index}){
             {
                 loading ? "Loading" : 
                 mainIDs.map((data) => (
-                    <MainCard {...data} key={data.id} color={color}/> 
+                    <Link to ={`/${categoryList[index]}/${data.id}`}>
+                        <MainCard {...data} key={data.id} color={color}/> 
+                    </Link>
                 ))
             }
         </div>
