@@ -1,3 +1,8 @@
+/* router link underline unseen */
+a {
+    text-decoration: none;
+}
+
 .top{
     position: absolute;
     width: 375px;
@@ -96,7 +101,9 @@
     padding: 6px 10px;
 
     position: static;
+    /* max-width: 130px; */
     max-width: 130px;
+    /* width:auto; */
     height: 20px;
     left: 20px;
     top: 20px;

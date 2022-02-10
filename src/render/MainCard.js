@@ -14,7 +14,7 @@ function MainCard({by, descendants, id, kids, score, text, time, title, color}){
                 <div className={styles.title}> {title} </div>
                 {/* TEXT(CONTENT) */}
                 <div className={styles.text}>
-                    {text ? `${text.slice(0,245)}...` : null }
+                    {text ? `${text.slice(0,200)}...` : null }
                 </div>
                 {/* SCORE AND DESCENDANTS */}
                 <div> <Heart color={color} > 

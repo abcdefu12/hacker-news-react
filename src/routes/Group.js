@@ -29,10 +29,10 @@ function Top(){
     };
     
     
-    const getDetailIDs = async (idArr) => {
+    const getDetailIDs = async (detailArr) => {
         return await Promise.all(
-            idArr.map(async (id) => {
-                const response = await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
+            detailArr.map(async (detail) => {
+                const response = await fetch(`https://hacker-news.firebaseio.com/v0/item/${detail}.json`);
                 return await response.json();
             })
         )
@@ -51,7 +51,7 @@ function Top(){
         <div className={styles.top}>
             {loading ? <Loading /> : 
                 <div>
-                    <Template Category={category} />
+                    <Template category={category} />
                     <div className={styles.top_content}>
 
                         {/* BANNER */}
@@ -61,25 +61,22 @@ function Top(){
 
                         {/* BOX */}
                         {detailIDs.map((detailID)=>(
-                            <GroupNews
-                            by ={detailID.by}
-                            id={detailID.id}
-                            title={detailID.title}
-                            url={detailID.url} 
-                            text={detailID.text}
-                            date={detailID.time}
-                            point={detailID.score}
-                            many={detailID.descendants}
-                            
-
-                            // kids
-                            // text
-                            
-                            // time
-                            // by
-                            // type
-                            
-                            />
+                            <Link to ={`/${category}/${detailID.id}`}>
+                                
+                                <GroupNews
+                                    by ={detailID.by}
+                                    id={detailID.id}
+                                    title={detailID.title}
+                                    url={detailID.url} 
+                                    text={detailID.text}
+                                    date={detailID.time}
+                                    point={detailID.score}
+                                    many={detailID.descendants}
+                                    kid={detailID.kids}
+                                    // category={category}
+                                
+                                />
+                            </Link>
 
                         ))}
                        

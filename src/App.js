@@ -8,6 +8,7 @@ import{BrowserRouter as Router, Switch, Route,Link} from "react-router-dom";
 
 import Main from "./routes/Main";
 import Group from "./routes/Group";
+import Detail from "./routes/Detail";
 
 import Search from './routes/Search';
 
@@ -20,6 +21,7 @@ function App() {
       <Router>
         <Route path={"/"}> <Main /> </Route>
         <Route path={`/:category`}> <Group /> </Route>
+        <Route path={`/:category/:id`}> <Detail /> </Route>
       </Router>
     </RecoilRoot>
 

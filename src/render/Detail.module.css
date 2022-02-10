@@ -1,0 +1,129 @@
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+
+    position: static;
+    /* width: 375px; */
+    width:auto;
+    /* height: 398px; */
+    height: auto;
+    left: 0px;
+    top: 57px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 1px 0px;
+}
+.news_title{
+    position: static;
+    width: 335px;
+    height: 52px;
+    left: 20px;
+    top: 20px;
+
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 110%;
+    /* or 26px */
+
+    display: flex;
+    align-items: center;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 20px 0px 5px 0px;
+}
+.news_text{
+    position: static;
+    width: 335px;
+    height: 13px;
+    left: 20px;
+    top: 82px;
+
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 110%;
+    /* or 13px */
+
+
+    color: #6B6B6B;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+.news_content_text{
+
+    width: 335px;
+    /* height: 220px; */
+    height: auto;
+    /* left: 20px; */
+    right: 20px;
+    top: 105px;
+
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+    /* display: flex; */
+    /* align-items: center; */
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    /* margin: 10px 0px; */
+    /* margin: 0px 30px 0px 0px; */
+}
+.news_text_comments{
+    position: static;
+    width: 335px;
+    height: 13px;
+    left: 20px;
+    top: 365px;
+
+    font-family: Pretendard;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 110%;
+    /* or 13px */
+
+
+    color: #6B6B6B;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
